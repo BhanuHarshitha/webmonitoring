@@ -36,7 +36,7 @@ def main():
             if code!=200:
                 cur = datetime.now()
                 if l[i] in d:
-                    if int((cur-d[l[i]]).total_seconds())>=3*60:
+                    if int((cur-d[l[i]]).total_seconds())>=14*60:
                         bot={'text':"The website {} is down".format(l[i])}
                         http_obj = Http()
                         response = http_obj.request(
