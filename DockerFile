@@ -1,0 +1,7 @@
+FROM python:3.10.8 
+
+ADD webmonitor.py .
+
+RUN pip install requests beautifulsoup4 
+
+CMD [ "python","D:\webmonitoring\webmonitor.py" ]
